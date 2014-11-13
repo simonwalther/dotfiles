@@ -3,6 +3,7 @@
   email = neville.dubuisgmail.com
 
 [alias]
+  b = branch
   ck = checkout
   ci = commit
   st = status
