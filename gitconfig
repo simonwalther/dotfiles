@@ -1,9 +1,9 @@
 [user]
-  name = Yann Lugrin
-  email = yann.lugrin@liquid-concept.ch
+  name = Néville Dubuis
+  email = neville.dubuisgmail.com
 
 [alias]
-  co = checkout
+  ck = checkout
   ci = commit
   st = status
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

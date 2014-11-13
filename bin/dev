@@ -11,10 +11,8 @@ tmux has-session -t $session_name
 if [ $? -ne 0 ]; then
   # New session script
 
-  # create session with fist window containing ViM
-  tmux new-session -s $session_name -n console -d
-  tmux split-window -t $session_name -v -p 50 -d
-  tmux split-window -t $session_name -h -p 50 -d
+  # open atom
+  atom pwd
 
   # add console window splited in 4 panes
   tmux new-window -t $session_name -n editor
