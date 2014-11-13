@@ -6,7 +6,7 @@
 export ZSH=$HOME/.zsh
 
 # Set name of the theme to load.
-ZSH_THEME="nevilledubuis"
+ZSH_THEME="yannlugrin"
 
 # load auto completion from homebrew pacakge
 if [ -d /usr/local/share/zsh/site-functions ]; then

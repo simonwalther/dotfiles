@@ -11,15 +11,16 @@ tmux has-session -t $session_name
 if [ $? -ne 0 ]; then
   # New session script
 
-  # open atom
-  atom `pwd`
+  # create session with first
+  tmux new-session -s $session_name -n console -d
+  tmux split-window -t $session_name -v -p 50 -d
+  tmux split-window -t $session_name -h -p 50 -d
 
   # add console window splited in 4 panes
-  tmux new-window -t $session_name -n editor
-  tmux send-keys -t $session_name 'vim' C-m
+  tmux send-keys -t $session_name 'atom `pwd`' C-m
 
   # attach to session
-  tmux select-window -t $session_name:1
+  tmux select-window -t $session_name:0
   tmux select-pane -t $session_name -D
   tmux attach -t $session_name
 
