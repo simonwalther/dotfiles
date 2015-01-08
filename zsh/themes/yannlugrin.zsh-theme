@@ -77,9 +77,10 @@ function custom_git_prompt()
     fi
 
     # Set current branch
+    time_since_last_commit="$(git log -1 --format="%cr")"
     branch="$(git symbolic-ref HEAD 2>/dev/null)"
     test -z "$branch" && branch='<detached>'
-    STATUS="${STATUS}(${branch#refs/heads/})"
+    STATUS="${STATUS} (${branch#refs/heads/} : $time_since_last_commit)"
 
     # Display the prompt.
     echo "$STATUS"

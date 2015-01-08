@@ -41,8 +41,7 @@ You can safely run `rcup` multiple times to update:
 
     rcup
 
-If you use iTerm, I recommand solarized color scheme (same used in my Vim
-config): http://ethanschoonover.com/solarized.
+I use iTerm with smyck color scheme. Give it a look at : https://github.com/hukl/Smyck-Color-Scheme/ (also avaible for vim).
 
 More informations about my config
 ---------------------------------
@@ -56,4 +55,3 @@ MIT (see LICENSE file)
 
 Inspired by thoughtbot dotfiles licensed under MIT with thoughbot copyright:
 https://github.com/thoughtbot/dotfiles
-
