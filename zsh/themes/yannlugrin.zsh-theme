@@ -80,7 +80,7 @@ function custom_git_prompt()
     time_since_last_commit="$(git log -1 --format="%cr")"
     branch="$(git symbolic-ref HEAD 2>/dev/null)"
     test -z "$branch" && branch='<detached>'
-    STATUS="${STATUS} (${branch#refs/heads/} : $time_since_last_commit)"
+    STATUS="${STATUS} (${branch#refs/heads/} $time_since_last_commit)"
 
     # Display the prompt.
     echo "$STATUS"
@@ -92,6 +92,7 @@ TRAPALRM() {
   fetch_git_repository
   zle reset-prompt
 }
+
 
 # custom git prompt
 ZSH_THEME_GIT_PROMPT_STAGED="%{$fg_bold[green]%}●"
