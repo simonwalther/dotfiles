@@ -21,7 +21,7 @@ Install
 
 Clone onto your laptop:
 
-    cd ~; git clone https://github.com/yannlugrin/dotfiles.git .dotfiles
+    cd ~; git clone https://github.com/simonwalther/dotfiles.git .dotfiles
 
 Install [rcm](https://github.com/thoughtbot/rcm) and others dependencies
 like `vim` and more:
