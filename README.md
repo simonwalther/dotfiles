@@ -12,6 +12,10 @@ Git installed:
 
     brew install git zsh
 
+Add homebrew zsh path to list of shell:
+
+    echo $(which zsh) | sudo tee -a /etc/shells
+
 Set zsh as your login shell:
 
     chsh -s $(which zsh)
@@ -45,6 +49,7 @@ Recommandations
 ---------------
 
 I use iTerm2 with smyck color scheme. Give it a look at : https://github.com/hukl/Smyck-Color-Scheme/ (also avaible for vim).
+
 I use Atom with coal graal https://atom.io/themes/coal-graal (from Textmate) and Seti UI https://github.com/jesseweed/seti-ui.
 
 Screenshots
