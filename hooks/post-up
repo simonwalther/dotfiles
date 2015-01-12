@@ -1,30 +1,5 @@
 #!/bin/sh
 
-# Install Vundle
-if [ ! -e $HOME/.vim/bundle/Vundle.vim ]; then
-  git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-fi
-vim -u $HOME/.vimrc.bundles +PluginInstall +qa
-
-# create vim swap foler
-mkdir -p $HOME/.vim/swap
-
-# compile Comman-T plugin
-if [ -e $HOME/.vim/bundle/command-t/ruby/command-t ]; then
-  cd $HOME/.vim/bundle/command-t/ruby/command-t
-  rbenv local system
-  ruby extconf.rb
-  make
-  cd $HOME
-fi
-
-# compile YouCompleteMe plugin
-if [ -e $HOME/.vim/bundle/YouCompleteMe ]; then
-  cd $HOME/.vim/bundle/YouCompleteMe
-  sh install.sh
-  cd $HOME
-fi
-
 # add rbenv update plugin
 if [ ! -e $HOME/.rbenv/plugins/rbenv-update ]; then
   git clone -- git://github.com/rkh/rbenv-update.git $HOME/.rbenv/plugins/rbenv-update
@@ -42,11 +17,10 @@ if [ ! -e $HOME/.rbenv/plugins/rbenv-default-gems ]; then
 fi
 
 # add rbenv aliases plugin
-if [ ! -e $HOME/.rbenv/plugins/rbenv-aliases]; then
+if [ ! -e $HOME/.rbenv/plugins/rbenv-aliases ]; then
   git clone -- git://github.com/tpope/rbenv-aliases.git ~/.rbenv/plugins/rbenv-aliases
   rbenv alias --auto
 fi
 
 # Configure zsh
 mkdir -p $HOME/.zsh
-

@@ -51,7 +51,7 @@ bindkey "^R" history-incremental-search-backward
 bindkey "^P" history-search-backward
 
 # use vim as the visual editor
-export VISUAL=vim
+export VISUAL=nano
 export EDITOR=$VISUAL
 
 # aliases

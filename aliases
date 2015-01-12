@@ -26,5 +26,6 @@ alias gup='git pull'
 compdef _git gup='git pull'
 
 # Powder
-alias powsafe='powder restart && passenger start -p 3000'
-alias sproject='bundle install && bundle exec rake db:migrate || bundle exec rake db:create || echo there isnt rake in this project'
+alias passt='passenger start -p 3000'
+alias powsf='powder restart && passenger start -p 3000'
+alias stprj='bundle install && bundle exec rake db:migrate || bundle exec rake db:create || echo there isnt rake in this project'
