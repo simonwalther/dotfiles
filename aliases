@@ -24,8 +24,14 @@ alias gp='git push'
 compdef _git gp='git push'
 alias gup='git pull'
 compdef _git gup='git pull'
+alias grst='git reset --soft HEAD~1'
 
-# Powder
+# Websites
+alias ncp='bundle exec nanoc compile && cls'
+alias opw='open http://0.0.0.0:3000'
 alias passt='passenger start -p 3000'
-alias powsf='powder restart && passenger start -p 3000'
-alias stprj='bundle install && bundle exec rake db:migrate || bundle exec rake db:create || echo there isnt rake in this project'
+alias powsf='powder restart && passt'
+alias rk='bundle exec rake db:migrate || bundle exec rake db:create || echo there isnt rake in this project'
+alias bi='bundle install'
+alias rls='bi && rk && powsf && opw'
+alias ncps='ncp && powsf && opw'
