@@ -41,12 +41,16 @@ You can safely run `rcup` multiple times to update:
 
     rcup
 
-I use iTerm with smyck color scheme. Give it a look at : https://github.com/hukl/Smyck-Color-Scheme/ (also avaible for vim).
+Recommandations
+---------------
 
-More informations about my config
----------------------------------
+I use iTerm2 with smyck color scheme. Give it a look at : https://github.com/hukl/Smyck-Color-Scheme/ (also avaible for vim).
+I use Atom with coal graal https://atom.io/themes/coal-graal (from Textmate) and Seti UI https://github.com/jesseweed/seti-ui.
 
-Coming soon (or maybe later).
+Screenshots
+-----------
+
+![Alt text](/iterm.png?raw=true "A view of iterm with this config")
 
 License
 -------
